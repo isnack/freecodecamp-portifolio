@@ -18,10 +18,10 @@ p {
 header {
   margin: 0;
   padding: 0;
-  height: 10vh;
   width: 100%;
+  height: 10vh;  
   background-color: #e0ebe8;
-  position: fixed;
+  position: absolute;
   color: #008080;
 }
 ul {
@@ -62,21 +62,6 @@ li {
   display: flex;
   justify-content: space-around;
 }
-@media screen and (max-width: 550px) {
-  #welcome-section {
-    padding: 0 0 0 0;
-    justify-content: center;
-  }
-  #projects {
-    padding: 0 0 0 0;
-    justify-content: center;
-  }
-  #profiles {
-    flex-direction: column;
-    padding: 0 0 0 0;
-    justify-content: center;
-  }
-}
 
 #projects > div {
   display: flex;
@@ -105,7 +90,7 @@ li {
 }
 
 #text {
-  width: 1390px;
+  width: 100%;
   text-align: center;
   padding-bottom: 150px;
 }
@@ -120,7 +105,27 @@ li {
   border: 1px solid #3ab260;
   border-radius: 100px;
 }
-@media screen and (max-width: 950px) {
+
+.responsive {
+  max-width: 100%;
+  height: 165px;
+}
+@media screen and (max-width: 550px) {
+  #welcome-section {
+    padding: 0 0 0 0;
+    justify-content: center;
+  }
+  #projects {
+    padding: 0 0 0 0;
+    justify-content: center;
+  }
+  #profiles {
+    padding: 0 0 0 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 550px) {
   .profile {
     flex-direction: column;
     flex-wrap: wrap;
@@ -128,8 +133,3 @@ li {
     border-radius: 0px;
     margin-bottom: 20px;
   }
-}
-.responsive {
-  max-width: 100%;
-  height: 165px;
-}
