@@ -57,7 +57,7 @@ li {
   display: flex;
   justify-content: space-around;
 }
-@media screen and (max-width: 950px) and (orientation: landscape) {
+@media screen and (max-width: 650px) {
   .profile {
     justify-content: flex-end;
   }
