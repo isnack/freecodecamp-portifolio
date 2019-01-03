@@ -15,13 +15,13 @@ p {
   margin: 0;
   padding: 0;
 }
-header {
+nav {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 10vh;  
+  height: 16vh;
   background-color: #e0ebe8;
-  position: absolute;
+  position: fixed;
   color: #008080;
 }
 ul {
@@ -50,7 +50,8 @@ li {
   align-items: center;
   justify-content: center;
   background-color: #e0ebe8;
-  height: 500px;
+  top: 0;
+  height: 100vh;
   width: 100%;
 }
 
@@ -110,7 +111,7 @@ li {
   max-width: 100%;
   height: 165px;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 1000px) {
   #welcome-section {
     padding: 0 0 0 0;
     justify-content: center;
@@ -123,9 +124,8 @@ li {
     padding: 0 0 0 0;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
-}
-@media screen and (max-width: 550px) {
   .profile {
     flex-direction: column;
     flex-wrap: wrap;
@@ -133,3 +133,9 @@ li {
     border-radius: 0px;
     margin-bottom: 20px;
   }
+}
+footer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
